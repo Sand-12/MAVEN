@@ -11,7 +11,7 @@ public class Product {
 		return id;
 	}
 	/*
-	**MAKING THIS A COMMENT BECAUSE WE CANNOT MAKE THE SETTER FOR THE FINAL VARIABLES**
+	***MAKING THIS A COMMENT BECAUSE WE CANNOT MAKE THE SETTER FOR THE FINAL VARIABLES***
 	public void setId(int id) {    
 		this.id = id;
 	}
@@ -35,6 +35,12 @@ public class Product {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	// ***2.) CREATED A SECOND CONSTRUCTOR WITH ONLY ONE ARGUMENT
+	public Product (int id)
+	{
+		this.id = id;
+	}
+	
 	
 	//CONSTRUCTOR AUTO DEFINED..... 
 	//THIS CONSTRUCTOR IS USED IN PLACE OF ALL THE SETTERS 
@@ -61,4 +67,5 @@ public class Product {
 			return ((Product)obj).getId() == id;
 		return false;
 	}
+	
 }
